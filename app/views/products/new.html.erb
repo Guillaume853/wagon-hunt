@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col_sm_offset-3">
+      <h1 class="text-center">
+        Add a product
+      </h1>
+
+      <%= simple_form_for @product do |f| %>
+        <%= f.input :name, placeholder: "kudoz", label: "Name of the product" %>
+        <%= f.input :url, placeholder: "http://getkudoz.com", label: "URL of the product"%>
+        <%= f.button :submit, "Ajouter", class: "btn btn-primary" %>
+      <% end %>
+
+
+
+      <!-- <form action="/products" method="post">
+
+        <div class="form-group">
+          <label for="name">Chose a product name</label>
+          <input type="text" name="product[name]" class="form-control" placeholder="Kudoz">
+        </div>
+
+        <div class="form-group">
+           <label for="url">URL ?</label>
+          <input type="text" name="product[url]" class="form-control" placeholder="http://kudoz.com">
+        </div>
+
+
+        <input type="submit" value="add"class="btn btn-primary">
+      </form>
+ -->
+    </div>
+  </div>
+</div>
+
