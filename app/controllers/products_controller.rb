@@ -47,7 +47,7 @@ class ProductsController < ApplicationController
   end
 
   def product_params
-    params.require(:product).permit(:name, :url, :tagline, :category)
+    params.require(:product).permit(:name, :url, :tagline, :category, :photo)
     #filtre les parametres
   end
 

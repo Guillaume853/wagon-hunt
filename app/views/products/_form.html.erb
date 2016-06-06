@@ -3,5 +3,6 @@
         <%= f.input :url, placeholder: "http://getkudoz.com", label: "URL of the product"%>
         <%= f.input :tagline, placeholder: "Your tagline", label: "Tagline of the product"%>
         <%= f.input :category, collection: ["tech", "education", "design"], prompt: "Category of the product ?" %>
+        <%= f.input :photo, as: :attachinary %>
         <%= f.button :submit, "Ajouter", class: "btn btn-primary" %>
       <% end %>
