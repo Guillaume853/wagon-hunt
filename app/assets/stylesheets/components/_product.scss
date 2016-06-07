@@ -37,6 +37,12 @@
   font-size: 13px;
   line-height: 20px;
 }
+
+a.product-upvote{
+  color:black
+}
+
+
 .product-count {
   margin: 2px 0 0;
 }
@@ -82,7 +88,9 @@
 .product-upvote:hover {
   color: #5898f1;
   cursor: pointer;
+  text-decoration: none
 }
+
 .product:hover .product-upvote { transform: scale(1.2) }
 .product:hover .product-controls-hidden a { color: #E6E6E6 }
 .product-upvote:hover .product-arrow { border-bottom: 9px solid #5898f1 }
